@@ -52,13 +52,7 @@ public class FollowCamera : MonoBehaviour
     transform.position = new Vector3(targetX, targetY, transform.position.z);
   }
 
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
-
-  bool CheckXMargin()
+	bool CheckXMargin()
   {
     return Mathf.Abs(transform.position.x - player.position.x) > xMargin;
   }

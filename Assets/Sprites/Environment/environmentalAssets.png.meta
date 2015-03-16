@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 6dec89ca6681364469a473e2c1298d47
-timeCreated: 1426120398
+timeCreated: 1426375017
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -66,8 +66,8 @@ TextureImporter:
         y: 483
         width: 374
         height: 533
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: environmentalAssets_1
       rect:
@@ -76,8 +76,8 @@ TextureImporter:
         y: 787
         width: 96
         height: 229
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 4
+      pivot: {x: 0, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: rocks
       rect:
@@ -86,8 +86,8 @@ TextureImporter:
         y: 877
         width: 39
         height: 139
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 4
+      pivot: {x: 0, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: environmentalAssets_4
       rect:
@@ -96,8 +96,8 @@ TextureImporter:
         y: 611
         width: 135
         height: 157
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 4
+      pivot: {x: 0, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: environmentalAssets_5
       rect:
@@ -106,8 +106,8 @@ TextureImporter:
         y: 500
         width: 160
         height: 96
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: environmentalAssets_6
       rect:
@@ -116,8 +116,8 @@ TextureImporter:
         y: 51
         width: 267
         height: 413
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: environmentalAssets_7
       rect:
@@ -126,8 +126,8 @@ TextureImporter:
         y: 238
         width: 122
         height: 226
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 4
+      pivot: {x: 0, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: environmentalAssets_8
       rect:
@@ -136,8 +136,8 @@ TextureImporter:
         y: 34
         width: 142
         height: 190
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

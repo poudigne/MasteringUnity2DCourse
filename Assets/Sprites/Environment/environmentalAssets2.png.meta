@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 803b3edbed8cc0c45a5f5d463560eaaa
-timeCreated: 1426120191
+timeCreated: 1426374656
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -60,8 +60,8 @@ TextureImporter:
         y: 706
         width: 706
         height: 314
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: environmentalAssets2_1
       rect:
@@ -71,7 +71,7 @@ TextureImporter:
         width: 250
         height: 726
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: environmentalAssets2_2
       rect:
@@ -80,8 +80,8 @@ TextureImporter:
         y: 129
         width: 331
         height: 155
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 4
+      pivot: {x: 0, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: environmentalAssets2_3
       rect:
@@ -91,7 +91,7 @@ TextureImporter:
         width: 296
         height: 533
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

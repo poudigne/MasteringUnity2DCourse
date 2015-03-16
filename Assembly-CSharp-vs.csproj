@@ -47,8 +47,25 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CharacterMovement.cs" />
+     <Compile Include="Assets\Scripts\Classes\Conversation.cs" />
+     <Compile Include="Assets\Scripts\Classes\ConversationComponent.cs" />
+     <Compile Include="Assets\Scripts\Classes\ConversationEntry.cs" />
+     <Compile Include="Assets\Scripts\Classes\Entity.cs" />
+     <Compile Include="Assets\Scripts\Classes\GameState.cs" />
+     <Compile Include="Assets\Scripts\Classes\MapMovement.cs" />
+     <Compile Include="Assets\Scripts\Classes\Npc.cs" />
+     <Compile Include="Assets\Scripts\Classes\Player.cs" />
+     <Compile Include="Assets\Scripts\Classes\Singleton.cs" />
+     <Compile Include="Assets\Scripts\Classes\WorldExtension.cs" />
      <Compile Include="Assets\Scripts\FollowCamera.cs" />
-     <Compile Include="Assets\Scripts\NavigationPrompt.cs" />
+     <Compile Include="Assets\Scripts\Manager\BattleManager.cs" />
+     <Compile Include="Assets\Scripts\Manager\ConversationManager.cs" />
+     <Compile Include="Assets\Scripts\Manager\FadeinOutManager.cs" />
+     <Compile Include="Assets\Scripts\Messaging\MessagingClientBroadcast.cs" />
+     <Compile Include="Assets\Scripts\Messaging\MessagingClientReceiver.cs" />
+     <Compile Include="Assets\Scripts\Messaging\MessagingManager.cs" />
+     <Compile Include="Assets\Scripts\Navigation\NavigationManager.cs" />
+     <Compile Include="Assets\Scripts\Navigation\NavigationPrompt.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

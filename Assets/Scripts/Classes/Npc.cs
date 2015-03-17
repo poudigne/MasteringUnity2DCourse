@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Npc 
+public class Npc : MonoBehaviour
 {
 
   public string _name;

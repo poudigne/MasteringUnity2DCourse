@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 03f1163af5bade7438aa700efa95c446
-timeCreated: 1426210313
+timeCreated: 1426552062
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -62,8 +62,8 @@ TextureImporter:
         y: 1024
         width: 96
         height: 128
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Greandal_1
       rect:
@@ -72,8 +72,8 @@ TextureImporter:
         y: 768
         width: 96
         height: 128
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Greandal_2
       rect:
@@ -82,8 +82,8 @@ TextureImporter:
         y: 512
         width: 96
         height: 128
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Greandal_3
       rect:
@@ -92,8 +92,8 @@ TextureImporter:
         y: 384
         width: 96
         height: 128
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Greandal_4
       rect:
@@ -102,8 +102,8 @@ TextureImporter:
         y: 256
         width: 96
         height: 128
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Greandal_5
       rect:
@@ -112,8 +112,8 @@ TextureImporter:
         y: 0
         width: 96
         height: 128
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

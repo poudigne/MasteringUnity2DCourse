@@ -6,10 +6,12 @@ public class Player : Entity
     public string[] Skills;
     public int Money;
 
-  public void AddInInventory(InventoryItem item)
-  {
-    Strength += item.strength;
-    Defense += item.defense;
-    Inventory.Add(item);
-  }
+    public void AddInInventory(InventoryItem item)
+    {
+        Debug.Log("Player.AddInInventory");
+
+        Strength += item.strength;
+        Defense += item.defense;
+        Inventory.Add(item);
+    }
 }

@@ -4,87 +4,120 @@ using System.Diagnostics;
 
 public class MessagingManager : Singleton<MessagingManager>
 {
-  protected MessagingManager() { } // guarantee this will be always a singleton only - can't use the constructor!
+    protected MessagingManager() { } // guarantee this will be always a singleton only - can't use the constructor!
 
-  // public property for manager
-  private List<Action> subscribers = new List<Action>();
-  private List<Action<bool>> uiEventSubscribers = new List<Action<bool>>();
+    // public property for manager
+    private List<Action> subscribers = new List<Action>();
+    private List<Action<bool>> uiEventSubscribers = new List<Action<bool>>();
+    private List<Action<InventoryItem>> inventorySubscriber = new List<Action<InventoryItem>>();
 
-  // Subscribe method for manager
-  public void Subscribe(Action subscriber)
-  {
-    if (subscribers != null)
+    // Subscribe method for manager
+    public void Subscribe(Action subscriber)
     {
-      subscribers.Add(subscriber);
+        if (subscribers != null)
+        {
+            subscribers.Add(subscriber);
+        }
     }
-  }
 
-  // Unsubscribe method for manager
-  public void UnSubscribe(Action subscriber)
-  {
-    if (subscribers != null)
+    // Unsubscribe method for manager
+    public void UnSubscribe(Action subscriber)
     {
-      subscribers.Remove(subscriber);
+        if (subscribers != null)
+        {
+            subscribers.Remove(subscriber);
+        }
     }
-  }
 
-  // Clear subscribers method for manager
-  public void ClearAllSubscribers()
-  {
-    if (subscribers != null)
+    // Clear subscribers method for manager
+    public void ClearAllSubscribers()
     {
-      subscribers.Clear();
+        if (subscribers != null)
+        {
+            subscribers.Clear();
+        }
     }
-  }
 
-  public void Broadcast()
-  {
-    if (subscribers != null)
+    public void Broadcast()
     {
-      foreach (var subscriber in subscribers.ToArray())
-      {
-        subscriber();
-      }
+        if (subscribers != null)
+        {
+            foreach (var subscriber in subscribers.ToArray())
+            {
+                subscriber();
+            }
+        }
     }
-  }
 
-  // Subscribe method for manager
-  public void SubscribeUIEvent(Action<bool> subscriber)
-  {
-    if (uiEventSubscribers != null)
+    // Subscribe method for manager
+    public void SubscribeUIEvent(Action<bool> subscriber)
     {
-      uiEventSubscribers.Add(subscriber);
+        if (uiEventSubscribers != null)
+        {
+            uiEventSubscribers.Add(subscriber);
+        }
     }
-  }
 
-  public void BroadcastUIEvent(bool uiVisible)
-  {
-    if (uiEventSubscribers != null)
+    public void BroadcastUIEvent(bool uiVisible)
     {
-      foreach (var subscriber in uiEventSubscribers.ToArray())
-      {
-        subscriber(uiVisible);
-      }
+        if (uiEventSubscribers != null)
+        {
+            foreach (var subscriber in uiEventSubscribers.ToArray())
+            {
+                subscriber(uiVisible);
+            }
+        }
     }
-  }
 
-  // Unsubscribe method for UI manager
-  public void UnSubscribeUIEvent(Action<bool> subscriber)
-  {
-    if (uiEventSubscribers != null)
+    // Unsubscribe method for UI manager
+    public void UnSubscribeUIEvent(Action<bool> subscriber)
     {
-      uiEventSubscribers.Remove(subscriber);
+        if (uiEventSubscribers != null)
+        {
+            uiEventSubscribers.Remove(subscriber);
+        }
     }
-  }
 
-  // Clear subscribers method for manager
-  public void ClearAllUIEventSubscribers()
-  {
-    if (uiEventSubscribers != null)
+    // Clear subscribers method for manager
+    public void ClearAllUIEventSubscribers()
     {
-      uiEventSubscribers.Clear();
+        if (uiEventSubscribers != null)
+        {
+            uiEventSubscribers.Clear();
+        }
     }
-  }
+
+    public void SubscribeInventoryEvent(Action<InventoryItem> subscriber)
+    {
+        if (inventorySubscriber != null)
+        {
+            inventorySubscriber.Add(subscriber);
+        }
+    }
+
+    public void BroadcastInventoryEvent(InventoryItem itemInUse)
+    {
+        foreach (var subscriber in inventorySubscriber)
+        {
+            subscriber(itemInUse);
+        }
+    }
+
+    public void UnsubscribInventoryEvent(Action<InventoryItem> subscriber)
+    {
+        if (inventorySubscriber != null)
+        {
+            inventorySubscriber.Remove(subscriber);
+        }
+    }
+
+    public void ClearAllInventoryEventSubscribers()
+    {
+        if (inventorySubscriber != null)
+        {
+            inventorySubscriber.Clear();
+        }
+    }
 }
 
 

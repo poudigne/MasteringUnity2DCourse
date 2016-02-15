@@ -4,16 +4,16 @@ using System.Collections;
 public class ShopManager : MonoBehaviour
 {
 
-  public Sprite shopOwnerSprite;
-  public Vector3 shopOwnerScale;
-  public GameObject shopOwnerLocation;
-  public GameObject purchasingSection;
-  public SpriteRenderer purchaseItemDisplay;
-  public ShopSlot[] itemSlots;
-  public InventoryItem[] shopItems;
-  private static ShopSlot selectedShopSlot;
+    public Sprite shopOwnerSprite;
+    public Vector3 shopOwnerScale;
+    public GameObject shopOwnerLocation;
+    public GameObject purchasingSection;
+    public SpriteRenderer purchaseItemDisplay;
+    public ShopSlot[] itemSlots;
+    public InventoryItem[] shopItems;
+    private static ShopSlot selectedShopSlot;
 
-  private int nextSlotIndex = 0;
+    private int nextSlotIndex = 0;
  
 	// Use this for initialization
 	void Start ()
@@ -40,22 +40,22 @@ public class ShopManager : MonoBehaviour
 	}
 
 
-  public void SetShopSelectedItem(ShopSlot slot)
-  {
-    selectedShopSlot = slot;
-    purchaseItemDisplay.sprite = slot.item.sprite;
-    purchasingSection.SetActive(true);
-  }
+    public void SetShopSelectedItem(ShopSlot slot)
+    {
+        selectedShopSlot = slot;
+        purchaseItemDisplay.sprite = slot.item.sprite;
+        purchasingSection.SetActive(true);
+    }
 
-  public void ClearSelectedItem()
-  {
-    selectedShopSlot = null;
-    purchaseItemDisplay.sprite = null;
-    purchasingSection.SetActive(false);
-  }
+    public void ClearSelectedItem()
+    {
+        selectedShopSlot = null;
+        purchaseItemDisplay.sprite = null;
+        purchasingSection.SetActive(false);
+    }
 
-  public static void PurchaseSelectionItem()
-  {
-    selectedShopSlot.PurchaseItem();
-  }
+    public static void PurchaseSelectionItem()
+    {
+        selectedShopSlot.PurchaseItem();
+    }
 }
